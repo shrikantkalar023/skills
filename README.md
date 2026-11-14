@@ -22,17 +22,20 @@ codex plugin marketplace add shrikantkalar023/skills
 codex plugin add shrikant@shrikant
 ```
 
-Cursor loads local plugins from `~/.cursor/plugins/local`. Clone the repo there. A symlink to a path outside that directory does not load.
+Cursor:
 
 ```bash
-git clone https://github.com/shrikantkalar023/skills ~/.cursor/plugins/local/shrikant
+git clone https://github.com/shrikantkalar023/skills
+bash skills/scripts/install-cursor.sh
 ```
 
-Restart the agent after install.
+The script installs the local plugin and a `shrikant:research` alias for Cursor and T3's skill menu. Re-run it to update. It stops if the installed clone has local changes.
+
+Start a new agent session after installation.
 
 ## Use
 
-Claude Code: `/shrikant:research <question>`. Codex: `$shrikant:research <question>`. In Cursor, pick `research` from the skills list.
+Claude Code and Cursor: `/shrikant:research <question>`. Codex: `$shrikant:research <question>`. In T3, select `shrikant:research` from the slash menu with any of the three providers.
 
 Requires an agent that can delegate to the listed models. T3 Code is supported. Model access depends on your configured providers.
 
