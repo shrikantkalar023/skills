@@ -2,6 +2,12 @@
 
 Agent skills for research and engineering, packaged as the `shrikant` plugin for Claude Code, Codex and Cursor.
 
+## Why
+
+Models from frontier labs can refuse or omit legitimate research on security, vulnerability patching, scraping, and other sensitive technical topics. That can leave practical questions unanswered.
+
+This skill asks models from different labs independently, checks their claims against sources, and combines the useful findings. One model's refusal does not stop the research. Agreement alone does not make an answer correct.
+
 ## Skills
 
 - [research](skills/research/SKILL.md). Research with DeepSeek, Opus, Astra, Sol, and GLM in parallel. Combine verified findings and report refusals, failures, and confirmed model changes.
@@ -42,7 +48,5 @@ Requires an agent that can delegate to the listed models. T3 Code is supported. 
 ## Customize
 
 Edit the skill's panel and reasoning effort to match your setup. Unsupported effort settings need the nearest supported value.
-
-Inspired by [Lauren Tan's pstack](https://github.com/cursor/plugins/tree/main/pstack) and [Matt Pocock's skills](https://github.com/mattpocock/skills).
 
 [MIT License](LICENSE).
