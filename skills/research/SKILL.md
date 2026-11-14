@@ -1,9 +1,9 @@
 ---
-name: multi-lab-research
+name: research
 description: Research technical questions with multiple LLMs.
 ---
 
-# Multi-lab research
+# Research
 
 ## Panel
 

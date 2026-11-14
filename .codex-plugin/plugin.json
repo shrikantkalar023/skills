@@ -1,0 +1,12 @@
+{
+  "name": "shrikant",
+  "version": "0.1.0",
+  "description": "Shrikant Kalar's agent skills.",
+  "author": {
+    "name": "Shrikant Kalar",
+    "url": "https://github.com/shrikantkalar023"
+  },
+  "repository": "https://github.com/shrikantkalar023/skills",
+  "license": "MIT",
+  "skills": "./skills/"
+}

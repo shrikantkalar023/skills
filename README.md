@@ -1,18 +1,38 @@
 # Shrikant Kalar's skills
 
-Small agent skills for research and engineering.
+Agent skills for research and engineering, packaged as the `shrikant` plugin for Claude Code, Codex and Cursor.
 
 ## Skills
 
-- [multi-lab-research](skills/multi-lab-research/SKILL.md). Research with DeepSeek, Opus, Astra, Sol, and GLM in parallel. Combine verified findings and report refusals, failures, and confirmed model changes.
+- [research](skills/research/SKILL.md). Research with DeepSeek, Opus, Astra, Sol, and GLM in parallel. Combine verified findings and report refusals, failures, and confirmed model changes.
 
 ## Install
 
+Claude Code:
+
 ```bash
-bunx skills@latest add shrikantkalar023/skills --skill multi-lab-research
+claude plugin marketplace add shrikantkalar023/skills
+claude plugin install shrikant@shrikant
 ```
 
-Ask your agent to use `multi-lab-research` with your research question.
+Codex:
+
+```bash
+codex plugin marketplace add shrikantkalar023/skills
+codex plugin add shrikant@shrikant
+```
+
+Cursor loads local plugins from `~/.cursor/plugins/local`. Clone the repo there. A symlink to a path outside that directory does not load.
+
+```bash
+git clone https://github.com/shrikantkalar023/skills ~/.cursor/plugins/local/shrikant
+```
+
+Restart the agent after install.
+
+## Use
+
+Claude Code: `/shrikant:research <question>`. Codex: `$shrikant:research <question>`. In Cursor, pick `research` from the skills list.
 
 Requires an agent that can delegate to the listed models. T3 Code is supported. Model access depends on your configured providers.
 
