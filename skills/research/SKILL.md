@@ -7,7 +7,7 @@ description: Research technical questions with multiple LLMs.
 
 ## Panel
 
-Use all panel members at medium reasoning effort. Resolve current IDs and access before launch. Do not substitute models without approval.
+Use all panel members at medium/high reasoning effort. Resolve current IDs and access before launch. Do not substitute models without approval.
 
 - DeepSeek V4.1 Flash
 - Claude Opus 5.5
